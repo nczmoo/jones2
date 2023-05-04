@@ -1,0 +1,68 @@
+add gameloop basics
+
+
+XXX convert 3 goodwill type to 1 othertype
+XXX convert goodwill to work reputation
+XXX work reputation nets you a promotion (1-10%)
+XXXX earn money at the end of the week
+XXXX having 0 - 10 rep is a fail
++++ neg is the new condition
+XXX the penalty becomes less with  numOfDays as part of the variable 
++++ changed the upper range to not be bound by that
+XXX more than 16 hours per day becomes unwieldy
++++ capped at 16 hours
+XXX each type should have a thing / what incentive is there to be able to put more hours towards categories
++++ the promotion aspect and different hours required and everything else 
+XXXX What if the dayNum modifier for the upper range of this.config.gain was specific  to each category and is halved each time you don't put anything towards it?
+XXX change convert from 3:1 to 1:1 or 2:1 because it seems like every situation 3 would always be worth more 
+
+
+
+XXX add reqHours next to unassignedHours
+XXXX if you have 3 stars, bold them
+XXX add stars to promotion page
+XXX change convert button to star star -> star
+XXX disabled link to office politics when you can't do it
+XXXX round wage and upgraded wage in promotion page
+XXX round percerntages on promotion buttons
+XXX randomize between 9, 16 for reqHours AND console.log it to keep track of the seq
+XXX show percent of raise in () after raisedWage
+XXX no category should ever have more than 8 (this should have been obvious)
+XXXX press ! button to reset to 0 if max or > reqHours BUT change color to reflect its change in behavior
+XXX check convert that from is different from to
+XXX when selecting convertFrom, remove the convertFrom from convertTo
+XXXX refactor
+
+
+
+remove reqhours because its confusing if you don't understand wahts going on
+run it through 9-16 THEN randomly generate it
+lower upper range of rand generation of reqHours when player fails and increasing it when they don't
+stars aren't showing up properly
+check if the fail penalty is being implemented properly because I put 1 
+	in a category but it still went up to 99 the next day
+generate new raise when promoted
+have deltaRep initially be populated with the rep if empty AND if you fulfill the req
+
+
+MAYBE 
+type 'resets after every promotion and on monday' on promotion page
+
+
+
+CONCERNS
+While it feels difficult at 16, I'm wondering if it should occassionally go above this, 
+	because I'm not dying and its starting to feel rote.
+it feels bad when you have excess that cannot be efficiently allocated somewhere
+another argument FOR getting the reqHour GAIN as part of adding each hour is so they 
+	don't automatically have to just add 1 automatically and could be incentivized to possibly add more
+
+NEW
+add interns or employees
+add overtime or doubletime
+add buying stuff with money
+
+
+NO
+should the 100% gain be per hour instead of at 100%? this would resolve the next concern
+--- this creates the hard choices. TRY IT though duriing 100 h development to see how it changes the game
